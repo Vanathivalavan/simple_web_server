@@ -1,13 +1,15 @@
 from http.server import HTTPServer,BaseHTTPRequestHandler
 content ='''
 <html>
+<body bgcolor="purple" style="color: white;">
 
 <h1>
     TCP/IP NETWORK MODEL
-</h1>
+</h1
 
 
-<br>
+
+
 
 
 <h3>
@@ -15,18 +17,15 @@ content ='''
 </h3>
 
 <h4>
-    Provides network services to users and applications.
-</h4>
+Presents data to the users,Encoding and session Controit,data translation with help of protocols.
+    </h4>
 
-<h4>
-    Eg:HTTP,FTP
-</h4>
 
 <h3>
     Transport Layer:
 </h3>
 <h4>
-    Ensures reliable or fast delivery of data between devices.
+    Support end to end Connection establishment of data segments and delivery with error control by using TCP and UDP protocols.
 </h4>
 
 <h3>
@@ -51,6 +50,9 @@ content ='''
 <h4>
     Provide the Physical interface for data transmission.
 </h4>
+
+
+</body>
 
 </html>
 

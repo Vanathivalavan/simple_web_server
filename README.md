@@ -1,6 +1,6 @@
 # EX01 Developing a Simple Webserver
 
-# Date: 19.09.2025
+# Date: 20.09.2025
 # AIM:
 To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol suite.
 
@@ -25,13 +25,14 @@ Testing the webserver.
 from http.server import HTTPServer,BaseHTTPRequestHandler
 content ='''
 <html>
+<body bgcolor="purple" style="color: white;">
 
 <h1>
     TCP/IP NETWORK MODEL
 </h1>
 
 
-<br>
+
 
 
 <h3>
@@ -39,18 +40,15 @@ content ='''
 </h3>
 
 <h4>
-    Provides network services to users and applications.
-</h4>
+Presents data to the users,Encoding and session Controit,data translation with help of protocols.
+    </h4>
 
-<h4>
-    Eg:HTTP,FTP
-</h4>
 
 <h3>
     Transport Layer:
 </h3>
 <h4>
-    Ensures reliable or fast delivery of data between devices.
+    Support end to end Connection establishment of data segments and delivery with error control by using TCP and UDP protocols.
 </h4>
 
 <h3>
@@ -76,6 +74,9 @@ content ='''
     Provide the Physical interface for data transmission.
 </h4>
 
+
+</body>
+
 </html>
 
 
@@ -93,10 +94,14 @@ print("This is my webserver")
 server_address=('',8000)
 httpd=HTTPServer(server_address,Myserver)
 httpd.serve_forever()
+
 ```
 # OUTPUT:
-![alt text](<screenshot 1.jpg>)
-![alt text](<screen 2.jpg>)
+
+![alt text](<Screenshot 2025-09-20 103510.png>)
+
+![alt text](<Screenshot 2025-09-20 103521.png>)
+
 
 # RESULT:
 The program for implementing simple webserver is executed successfully.
